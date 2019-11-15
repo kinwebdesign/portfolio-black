@@ -1,0 +1,67 @@
+@import "components/_import.less";
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
+
+/* Copy */
+
+@global-font-family:                            'Open Sans', sans-serif;
+@global-line-height:                            2;
+@global-xxlarge-font-size:                      4rem;
+@global-xlarge-font-size:                       3rem;
+@global-large-font-size:                        2rem;
+
+/* Color */
+
+@global-link-color:                             #000;
+@global-link-hover-color:                       @global-link-color;
+
+/* Spacings */
+
+@global-margin:                                 3rem;
+@global-small-margin:                           1rem;
+@global-medium-margin:                          3rem;
+@global-large-margin:                           6rem;
+@global-xlarge-margin:                          9rem;
+@global-gutter:                                 3rem;
+@global-small-gutter:                           3rem;
+@global-medium-gutter:                          3rem;
+@global-large-gutter:                           6rem;
+
+h1 {
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+}
+
+// Text 
+
+.uk-text-lead {
+  text-transform: uppercase;
+  letter-spacing: 2;
+}
+
+// Button
+
+.uk-button {
+  text-transform: uppercase;
+}
+
+/**********/
+/* Custom */
+/**********/
+
+@media (min-width: 640px) {
+  .bump-right {
+    position: relative;
+    margin-left: 12rem;
+    margin-right: -12rem;
+
+    z-index: 1000;
+  }
+  .bump-left {
+    position: relative;
+    margin-left: -12rem;
+  }
+  .bump-up {
+    position: relative;
+    margin-top: -24rem;
+  }
+}
